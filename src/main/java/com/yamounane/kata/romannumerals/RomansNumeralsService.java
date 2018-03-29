@@ -7,12 +7,16 @@ package com.yamounane.kata.romannumerals;
 public class RomansNumeralsService {
 
 	public String translate(int i) {
-		if (i == 1) {
+		switch (i) {
+		case 1:
 			return "I";
-		} else if (i == 5) {
+		case 5:
 			return "V";
+		case 10:
+			return "X";
+		default:
+			return "";
 		}
-		return "";
 	}
 
 }

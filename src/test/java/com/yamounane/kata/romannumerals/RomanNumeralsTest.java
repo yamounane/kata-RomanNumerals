@@ -32,4 +32,9 @@ public class RomanNumeralsTest {
 		assertThat(romanNumeralsService.translate(10)).isEqualTo("X");
 	}
 
+	@Test
+	public void should_return_II_when_2_is_passed() {
+		assertThat(romanNumeralsService.translate(2)).isEqualTo("II");
+	}
+
 }

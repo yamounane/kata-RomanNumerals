@@ -26,4 +26,10 @@ public class RomanNumeralsTest {
 	public void should_return_V_when_5_is_passed() {
 		assertThat(romanNumeralsService.translate(5)).isEqualTo("V");
 	}
+
+	@Test
+	public void should_return_X_when_10_is_passed() {
+		assertThat(romanNumeralsService.translate(10)).isEqualTo("X");
+	}
+
 }

@@ -10,15 +10,15 @@ import org.junit.Test;
  */
 public class RomanNumeralsTest {
 
-	private RomansNumeralsService romaNumeralsService;
+	private RomansNumeralsService romanNumeralsService;
 
 	@Before
-	private void setUp() {
-		this.romaNumeralsService = new RomansNumeralsService();
+	public void setUp() {
+		this.romanNumeralsService = new RomansNumeralsService();
 	}
 
 	@Test
 	public void should_return_I_when_1_is_passed() {
-		assertThat(RomansNumeralsService.translate(1)).isEqualTo("I");
+		assertThat(romanNumeralsService.translate(1)).isEqualTo("I");
 	}
 }

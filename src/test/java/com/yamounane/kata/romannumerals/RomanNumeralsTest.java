@@ -47,4 +47,24 @@ public class RomanNumeralsTest {
 		assertThat(romanNumeralsService.translate(10)).isEqualTo("X");
 	}
 
+	@Test
+	public void should_return_L_when_50_is_passed() {
+		assertThat(romanNumeralsService.translate(50)).isEqualTo("L");
+	}
+
+	@Test
+	public void should_return_C_when_100_is_passed() {
+		assertThat(romanNumeralsService.translate(100)).isEqualTo("C");
+	}
+
+	@Test
+	public void should_return_D_when_500_is_passed() {
+		assertThat(romanNumeralsService.translate(500)).isEqualTo("D");
+	}
+
+	@Test
+	public void should_return_M_when_1000_is_passed() {
+		assertThat(romanNumeralsService.translate(1000)).isEqualTo("M");
+	}
+
 }

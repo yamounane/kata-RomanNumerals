@@ -28,6 +28,18 @@ public class RomansNumeralsService {
 		case 10:
 			translate += "X";
 			break;
+		case 50:
+			translate += "L";
+			break;
+		case 100:
+			translate += "C";
+			break;
+		case 500:
+			translate += "D";
+			break;
+		case 1000:
+			translate += "M";
+			break;
 		}
 		return translate;
 	}

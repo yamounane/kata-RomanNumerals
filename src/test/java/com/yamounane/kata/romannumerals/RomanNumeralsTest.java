@@ -23,6 +23,17 @@ public class RomanNumeralsTest {
 	}
 
 	@Test
+	public void should_return_II_when_2_is_passed() {
+		assertThat(romanNumeralsService.translate(2)).isEqualTo("II");
+
+	}
+
+	@Test
+	public void should_return_III_when_3_is_passed() {
+		assertThat(romanNumeralsService.translate(3)).isEqualTo("III");
+	}
+
+	@Test
 	public void should_return_V_when_5_is_passed() {
 		assertThat(romanNumeralsService.translate(5)).isEqualTo("V");
 	}
@@ -30,17 +41,6 @@ public class RomanNumeralsTest {
 	@Test
 	public void should_return_X_when_10_is_passed() {
 		assertThat(romanNumeralsService.translate(10)).isEqualTo("X");
-	}
-
-	@Test
-	public void should_return_II_when_2_is_passed() {
-		assertThat(romanNumeralsService.translate(2)).isEqualTo("II");
-
-	}
-
-	@Test
-	public void should_return_III_when_2_is_passed() {
-		assertThat(romanNumeralsService.translate(3)).isEqualTo("III");
 	}
 
 }

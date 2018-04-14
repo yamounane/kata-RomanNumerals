@@ -19,6 +19,9 @@ public class RomansNumeralsService {
 
 	private String translate(int i, String translate) {
 		switch (i) {
+		case 4:
+			translate += "IV";
+			break;
 		case 5:
 			translate += "V";
 			break;
